@@ -1,0 +1,50 @@
+/* -------------------------------------------------------------------------*/
+/* Desktop */
+
+
+@include at-breakpoint($pad) {
+	.logo {
+		margin-left: 100px;
+	}
+}
+
+@include at-breakpoint($desktop) {
+	.container {
+		// @include susy-grid-background;
+	}
+
+	.header {
+		overflow: hidden;
+	}
+
+	.logo {
+		margin-left: 0;
+		@include span-columns(4);
+	}
+
+	.navi {
+		@include span-columns(8 omega,12);
+		margin: 27px 0 0 0;
+		li {
+			@include isolate-grid(2);
+		}
+	}
+	.main {
+		margin-top: 50px;
+		.content {
+			clear: both;
+			overflow: hidden;
+			margin-bottom: 30px;
+		}
+	}
+
+	.news {
+		.date {
+			@include span-columns(2);
+		}
+		.entry {
+			@include span-columns(10 omega,12);
+		}
+	}
+}
+

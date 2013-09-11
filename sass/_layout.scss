@@ -1,0 +1,20 @@
+// ---------------------------------------------------------------------------
+// Layout Grid Setting
+
+$total-columns  : 12;
+$column-width   : 60px;
+$gutter-width   : 20px;
+$grid-padding   : 10px;
+
+$pad     : 768px 8;
+$desktop : 960px 12;
+
+$show-grid-backgrounds  : true;
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+.container {
+	@include container($total-columns, $pad, $desktop);
+	@include susy-grid-background;
+} 

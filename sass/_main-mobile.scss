@@ -1,0 +1,63 @@
+/* -------------------------------------------------------------------------*/
+/* Mobile & General*/
+
+.logo {
+	background: url("../images/logo.png") no-repeat 0 100%;
+	width: 297px;
+	height: 60px;
+	margin: 0 auto;
+	h1 {
+		display: inline-block;
+		position: relative;
+		top: 28px;
+		left: 190px;
+		font-size: 15px;
+		font-weight: bold;
+	}
+}
+
+.navi {
+	overflow: hidden;
+	margin: 15px 0 10px 0;
+	a {
+		color: #000;
+		&:hover {
+			color: #8b7a6f;
+		}
+	}
+	li {
+		@include isolate-grid(4);
+		margin-bottom: 10px;
+		text-align: center;
+	}
+}
+
+.main {
+	clear: both;
+	@include squish(1,1);
+}
+
+.newstitle {
+	text-align: center;
+	// background: url("../images/line-news.gif") repeat-x 0 100%;
+	height: 40px;
+	color: #8b7a6f;
+	font-weight: bold;
+}
+
+.news {
+	.date {
+		color: #fb6a4f;
+		font-weight: bold;
+	}
+	.entry {
+		margin-bottom: 20px;
+		color: #333;
+	}
+}
+
+.footer {
+	text-align: center;
+	font-size: 12px;
+	color: #8b7a6f;
+}
